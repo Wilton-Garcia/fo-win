@@ -16,6 +16,10 @@ namespace fo_win
 
         private string dirFinalPdf;
         private string dirFinalImages;
+        private string dirFinalVideos;
+        private string dirFinalExec;
+        private string dirFinalOffice;
+        private string dirFinalAudios;
 
         public Form1()
         {
@@ -54,11 +58,26 @@ namespace fo_win
                 
                     f.MoveTo(dirFinalPdf+"\\"+f.Name);
                 }
-                else if (f.Extension.Equals(".png"))
+                else if (f.Extension.Equals(".png") 
+                    || f.Extension.Equals(".jpeg")
+                    || f.Extension.Equals(".gif")
+                    || f.Extension.Equals(".bitmap")
+                    || f.Extension.Equals(".jpeg")
+                    || f.Extension.Equals(".svg"))
                 {
                     f.MoveTo(dirFinalImages+"\\"+f.Name);
                    
                 }
+                else if (f.Extension.Equals(".mp3"))
+                {
+                    f.MoveTo(dirFinalAudios + "\\"+f.Name);
+                    
+                }
+                else if (f.Extension.Equals(".mp4"))
+                {
+                    f.MoveTo(dirFinalVideos + "\\" + f.Name);
+                }
+                
                 
             }
 
