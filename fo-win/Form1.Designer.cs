@@ -119,6 +119,7 @@
             this.btnAbrirDiretorioFinalAudio.TabIndex = 6;
             this.btnAbrirDiretorioFinalAudio.Text = "Selecionar pasta";
             this.btnAbrirDiretorioFinalAudio.UseVisualStyleBackColor = true;
+            this.btnAbrirDiretorioFinalAudio.Click += new System.EventHandler(this.btnAbrirDiretorioFinalAudio_Click);
             // 
             // txbDiretorioFinalVideo
             // 
@@ -135,6 +136,7 @@
             this.btnAbrirDiretorioFinalVideo.TabIndex = 8;
             this.btnAbrirDiretorioFinalVideo.Text = "Selecionar pasta";
             this.btnAbrirDiretorioFinalVideo.UseVisualStyleBackColor = true;
+            this.btnAbrirDiretorioFinalVideo.Click += new System.EventHandler(this.btnAbrirDiretorioFinalVideo_Click);
             // 
             // txbDiretorioFinalImagens
             // 
@@ -168,6 +170,7 @@
             this.btnAbrirDiretorioFinalOffice.TabIndex = 12;
             this.btnAbrirDiretorioFinalOffice.Text = "Selecionar pasta";
             this.btnAbrirDiretorioFinalOffice.UseVisualStyleBackColor = true;
+            this.btnAbrirDiretorioFinalOffice.Click += new System.EventHandler(this.btnAbrirDiretorioFinalOffice_Click);
             // 
             // label1
             // 
